@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+    <script> 
+        function getscores(){
+            console.log("test")
+            $.ajax({
+                url: "https://catfact.ninja/fact",
+                success: function( result ) {
+                    console.log(result)
+                }
+              });
+        } 
+    </script>
+
+</header>
+
+
+
+<body>
+    <h1 id="promise">PROMISE 1</h1>
+    <h1 id="promise2">PROMISE 2</h1>
+    <input id ="refresher" type="button" value="Click me " onclick="getscores()"/>
+
+</body>
+
+
+
+</html>
